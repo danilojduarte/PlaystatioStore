@@ -19,6 +19,40 @@ body {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); 
     background: white;
     border-radius: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     
+}
+
+nav {
+    width: 100%;
+    text-align: right;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #fb5283;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 50px;
+    margin: 30px 0;
 }
