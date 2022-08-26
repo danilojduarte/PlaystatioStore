@@ -16,13 +16,13 @@
                 <img class="logo" src="img/logo.png" alt="Logo Playstation">
                 <nav>
                     <ul id="menu-list">
-                        <li><a class="nav-link" href="#">Consoles</a></li>
-                        <li><a class="nav-link" href="#">Acessórios</a></li>
-                        <li><a class="nav-link" href="#">Controles</a></li>
-                        <li><a class="nav-link" href="#">Outros</a></li>
+                        <li class="nav-li"><a class="nav-link" href="#">Consoles</a></li>
+                        <li class="nav-li"><a class="nav-link" href="#">Acessórios</a></li>
+                        <li class="nav-li"><a class="nav-link" href="#">Controles</a></li>
+                        <li class="nav-li"><a class="nav-link" href="#">Outros</a></li>
                     </ul>
                 </nav>
-                <img class="menu-icon" src="img/menu.png" alt="botão menu">
+                <img class="menu-icon" src="img/menu.png" alt="botão menu" onclick="showMenu()">
             </header>
             <section class="row">
                 <div class="column-1">
@@ -47,4 +47,16 @@
             </footer>
         </div>        
     </body>
+    <script>
+        const menuList = document.getElementById("menu-list")
+        menuList.style.maxHeight = "0px"
+
+        function showMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "120px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </html> 
