@@ -116,15 +116,25 @@ li {
     cursor: pointer;
     background: linear-gradient(to right, #fb5283, #ff3527);
     z-index: 2;
+    transition: all 0.-6s ease-in-out; 
+}
 
+.buy img {
+    width: 35px;
+    display: none;
+}
+
+.buy:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 180;
+    
 }
 
-.buy img {
-    width: 30px;
+.buy:hover img {
+    display: block;
 }
 
 .column-2 {
@@ -136,6 +146,7 @@ li {
 .controller {
     width: 90%;
     z-index: 2;
+    animation: moveController 2s infinite alternate ease-in-out;
 }
 
 .add-cart {
@@ -234,4 +245,10 @@ li {
    .social-links {
     align-items: center;
    }
+}
+
+@keyframes moveController {
+    from {
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
 }
